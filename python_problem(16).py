@@ -12,3 +12,6 @@ if search.find("hero")!=-1:
     print("result found")
 else:
     print("no result ")
+
+#go and do resarch
+#if and else ladder 
