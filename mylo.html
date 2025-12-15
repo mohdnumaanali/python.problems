@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Nagamani 💖</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(14px);
+            border-radius: 25px;
+            padding: 45px;
+            width: 90%;
+            max-width: 520px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+            animation: fadeIn 2s ease;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .heart {
+            font-size: 65px;
+            margin-bottom: 15px;
+            animation: beat 1.3s infinite;
+        }
+
+        button {
+            background: white;
+            color: #ff4d6d;
+            border: none;
+            padding: 13px 35px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #ffe3ea;
+        }
+
+        #secret {
+            margin-top: 25px;
+            font-size: 18px;
+            display: none;
+            animation: fadeIn 1.5s ease;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 12px;
+            opacity: 0.85;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.35); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+
+        <h1>Nagamani</h1>
+        <h2>This is for you 🌸</h2>
+
+        <p>
+            Hi Nagamani,  
+            I created this small website just for you.  
+            Not everyone takes time to write code for someone special,  
+            but you are worth every line.
+        </p>
+
+        <p>
+            You are not just my best friend,  
+            you are someone who makes moments feel lighter  
+            and smiles feel natural.
+        </p>
+
+        <button onclick="showSecret()">Tap Here 💫</button>
+
+        <div id="secret">
+            <p>
+                Maybe today this is just a website…  
+                but one day, I hope I’ll be brave enough  
+                to ask you a question that means everything 💍  
+                Until then, this is my way of saying  
+                you truly matter to me ❤️
+            </p>
+        </div>
+
+        <footer>
+            Crafted with ❤️ by someone who admires you deeply
+        </footer>
+    </div>
+
+    <script>
+        function showSecret() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
